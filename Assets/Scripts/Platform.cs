@@ -9,6 +9,7 @@ public class Platform : MonoBehaviour
             if(c.relativeVelocity.y <= 0f)
             {
                 c.gameObject.GetComponent<Karakter>()?.Ziplat(); // ⬅ Artık `Ziplat()` metoduna erişebilir! ✅
+                Destroy(this.gameObject);
             }
             
         }
